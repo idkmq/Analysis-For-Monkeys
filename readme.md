@@ -58,7 +58,6 @@ It's important to note that there are many other methods that attackers can use 
 
 Note that this is not an exhaustive list and attackers may use other DLLs to achieve their goals. It's important to regularly monitor system activity and be aware of common attack methods in order to detect and prevent these attacks.
 
-
 ## Commonly Abused Windows Binaries
 | Binary Name                           | Description                                                                                                                         |
 |---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,7 +71,30 @@ Note that this is not an exhaustive list and attackers may use other DLLs to ach
 | cmd.exe                               | Command-line interpreter that can be used to execute commands and scripts, but can be abused to execute malicious commands or code. |
 | mmc.exe                               | Used to open Microsoft Management Console snap-ins, but can be abused to execute malicious snap-ins or code.                        |
 
+## Example Windows Security IDs (SIDs) 
+| SID                   | Description                   | Example Use Case                                                                                                                                                                  |
+|-----------------------|-------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| S-1-5-18              | Local System account          | Identify processes running under the Local System account, which has high privileges and can access sensitive resources.                                                          |
+| S-1-5-32-544          | Administrators group          | Identify processes or files with permissions assigned to the Administrators group, which can grant elevated privileges.                                                           |
+| S-1-5-32-545          | Users group                   | Identify processes or files with permissions assigned to the Users group, which can be useful for detecting unauthorized access or activity.                                      |
+| S-1-5-32-548          | Account Operators group       | Identify processes or files with permissions assigned to the Account Operators group, which can be abused for privilege escalation.                                               |
+| S-1-5-21-*domain*-512 | Domain Admins group           | Identify processes or files with permissions assigned to the Domain Admins group, which has high privileges and can access sensitive resources.                                   |
+| S-1-5-21-*domain*-519 | Enterprise Admins group       | Identify processes or files with permissions assigned to the Enterprise Admins group, which has high privileges and can access sensitive resources across multiple domains.       |
+| S-1-5-21-*domain*-571 | Backup Operators group        | Identify processes or files with permissions assigned to the Backup Operators group, which can be abused for privilege escalation or data exfiltration.                           |
+| S-1-5-32-544          | Built-in Administrators group | Identify processes or files with permissions assigned to the Built-in Administrators group, which has high privileges and can grant elevated privileges to other users or groups. |
 
+## Using event IDs to identify malicious processes and their parent processes
+1. Identify relevant event IDs: One example of a relevant event ID is 4688, which is logged whenever a new process is created on a Windows system.
+
+2. Collect and analyze event logs: Configure your Windows host to collect event logs that include event ID 4688, and use a SIEM tool or other log analysis tool to search for this event ID. Look for processes that are known to be malicious or suspicious.
+
+3. Correlate events with other indicators: Use event IDs in conjunction with other indicators of compromise (IOCs) to identify potential threats. For example, you might look for event IDs that involve processes associated with known malicious file names or hashes.
+
+4. Use event ID 4689: Event ID 4689 is logged whenever a process is created by a specific parent process. By searching for this event ID and correlating it with event ID 4688, you can identify the parent processes that are spawning potentially malicious processes.
+
+5. Monitor for future activity: Use event IDs 4688 and 4689 to create alerts or rules that will notify you if suspicious process creation activity occurs in the future.
+
+For example, let's say you identify a process called "malware.exe" as being malicious. By searching for event IDs 4688 and 4689, you might find that this process is being spawned by a legitimate process called "explorer.exe". This could be an indication that "explorer.exe" has been compromised and is being used to launch the malicious process. By monitoring for future instances of "explorer.exe" spawning "malware.exe" or other suspicious processes, you can quickly detect potential threats and take action to mitigate them.
 # Outline 
 
 - Basic Hunt Checks 
