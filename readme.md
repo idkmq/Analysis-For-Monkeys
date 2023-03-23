@@ -14,6 +14,21 @@ During the pre-planning phase of a hunt, analysts should thoroughly analyze the 
 ## Common Persistnec Methods 
 
 There are many  persistence methods that can be used to maintain access to a compromised system. Here are some common ones:
+
+### Windows 
+| Persistence Method                                   | Description                                                                                                                                 |
+|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Startup folder                                       | Programs can be added to the startup folder in the Start Menu to execute automatically when a user logs on.                                 |
+| Registry Run keys                                    | Programs can be added to the Windows registry in the Run key to execute automatically when the system starts up.                            |
+| Services                                             | Malicious services can be installed on the system to execute code in the background.                                                        |
+| Scheduled tasks                                      | Scheduled tasks can be created to execute code at specific times, such as during system startup or when a user logs on.                     |
+| Windows Management Instrumentation (WMI) persistence | WMI allows for the creation of event filters and consumer bindings, which can be used to execute code when specific events occur.           |
+| COM hijacking                                        | Malicious code can be injected into legitimate Component Object Model (COM) objects, allowing them to execute code when the object is used. |
+| DLL hijacking                                        | Malicious code can be injected into legitimate Dynamic Link Libraries (DLLs), allowing them to execute code when a program loads the DLL.   |
+| Alternate data streams (ADS)                         | Malicious code can be hidden in an ADS attached to a legitimate file, allowing it to execute when the file is opened.                       |
+| Malware/rootkits                                     | Malicious software that can hide its presence on the system and provide remote access to the attacker.                                      |
+
+### Linux
 | Persistence Method                  | Description                                                                                                                         |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Cron jobs                           | These are scheduled tasks that run at specified times and can be used to execute malicious code.                                    |
@@ -26,17 +41,6 @@ There are many  persistence methods that can be used to maintain access to a com
 | Modified system configuration files | Attackers can modify system configuration files such as /etc/passwd or /etc/shadow to create new accounts or modify existing ones.  |
 | DNS hijacking                       | Attackers can modify DNS settings on the system to redirect network traffic to a malicious server.                                  |
 
-| Persistence Method                                   | Description                                                                                                                                 |
-|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Startup folder                                       | Programs can be added to the startup folder in the Start Menu to execute automatically when a user logs on.                                 |
-| Registry Run keys                                    | Programs can be added to the Windows registry in the Run key to execute automatically when the system starts up.                            |
-| Services                                             | Malicious services can be installed on the system to execute code in the background.                                                        |
-| Scheduled tasks                                      | Scheduled tasks can be created to execute code at specific times, such as during system startup or when a user logs on.                     |
-| Windows Management Instrumentation (WMI) persistence | WMI allows for the creation of event filters and consumer bindings, which can be used to execute code when specific events occur.           |
-| COM hijacking                                        | Malicious code can be injected into legitimate Component Object Model (COM) objects, allowing them to execute code when the object is used. |
-| DLL hijacking                                        | Malicious code can be injected into legitimate Dynamic Link Libraries (DLLs), allowing them to execute code when a program loads the DLL.   |
-| Alternate data streams (ADS)                         | Malicious code can be hidden in an ADS attached to a legitimate file, allowing it to execute when the file is opened.                       |
-| Malware/rootkits                                     | Malicious software that can hide its presence on the system and provide remote access to the attacker.                                      |
 
 It's important to note that there are many other methods that attackers can use to maintain persistence on a compromised system, and the above list is not exhaustive. Regular system audits, monitoring, and vulnerability assessments can help detect and prevent these attacks.
 
