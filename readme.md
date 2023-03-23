@@ -11,7 +11,7 @@ The OODA loop (Observe, Orient, Decide, Act) is a four-step approach to decision
 During the pre-planning phase of a hunt, analysts should thoroughly analyze the expected events and perform an OSR (Operational Security Review) on TTPs (Tactics, Techniques, and Procedures). At this stage, analysts should consider the tools available for the hunt and develop lines of investigation accordingly. If any new TTPs are identified during the mission pre-planning phase, analysts should investigate them further until they have a solid understanding, which will aid them in their hunt. It's essential to use available resources and collaborate with other analysts to refine new hunting methodologies. Being well-prepared with a clear idea of where and how to start the analysis is crucial for a successful hunt.  
 
 
-## Common Persistnec Methods 
+## Common Persistence Methods 
 
 There are many  persistence methods that can be used to maintain access to a compromised system. Here are some common ones:
 
