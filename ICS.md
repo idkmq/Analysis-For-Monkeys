@@ -4,17 +4,17 @@ In modern industrial environments, Industrial Control Systems (ICS) and Informat
 
 Here are some key components of an ICS defense that includes the IT network:
 
-Network Segmentation: Segmentation of the IT and ICS networks is critical to minimize the risk of attacks spreading between the networks. This can be achieved by implementing firewalls, routers, and other network security devices to control the flow of traffic between different network segments.
+- Network Segmentation: Segmentation of the IT and ICS networks is critical to minimize the risk of attacks spreading between the networks. This can be achieved by implementing firewalls, routers, and other network security devices to control the flow of traffic between different network segments.
 
-Vulnerability Management: Regular vulnerability assessments should be conducted on both the IT and ICS networks to identify potential weaknesses that could be exploited by attackers. Vulnerability management programs should include regular scanning, patching, and updating of software and hardware components.
+- Vulnerability Management: Regular vulnerability assessments should be conducted on both the IT and ICS networks to identify potential weaknesses that could be exploited by attackers. Vulnerability management programs should include regular scanning, patching, and updating of software and hardware components.
 
-Access Control: Access control measures should be implemented to restrict access to IT and ICS networks to authorized personnel only. This can include user authentication and authorization, physical security measures, and privileged access management.
+- Access Control: Access control measures should be implemented to restrict access to IT and ICS networks to authorized personnel only. This can include user authentication and authorization, physical security measures, and privileged access management.
 
-Monitoring and Detection: Continuous monitoring and detection capabilities are critical to identifying and responding to cyber threats in a timely manner. This can include intrusion detection and prevention systems, network traffic analysis, and security information and event management (SIEM) systems.
+- Monitoring and Detection: Continuous monitoring and detection capabilities are critical to identifying and responding to cyber threats in a timely manner. This can include intrusion detection and prevention systems, network traffic analysis, and security information and event management (SIEM) systems.
 
-Incident Response: A well-defined incident response plan should be in place to provide a rapid and effective response to cyber incidents. This plan should include procedures for identifying and containing the incident, assessing the impact, and restoring normal operations.
+- Incident Response: A well-defined incident response plan should be in place to provide a rapid and effective response to cyber incidents. This plan should include procedures for identifying and containing the incident, assessing the impact, and restoring normal operations.
 
-Training and Awareness: All personnel with access to the IT and ICS networks should be trained on the importance of cybersecurity and aware of the potential risks and threats. This can include regular security awareness training, phishing simulations, and incident response drills.
+- Training and Awareness: All personnel with access to the IT and ICS networks should be trained on the importance of cybersecurity and aware of the potential risks and threats. This can include regular security awareness training, phishing simulations, and incident response drills.
 
 # Lateral Movement from IT to ICS 
 
@@ -22,25 +22,25 @@ Lateral movement refers to the technique used by attackers to move laterally wit
 
 Here are some common methods used by attackers for lateral movement between IT and ICS networks:
 
-Stolen Credentials: Attackers can use stolen credentials to gain access to the IT network, and then use those same credentials to move laterally into the ICS network.
+- Stolen Credentials: Attackers can use stolen credentials to gain access to the IT network, and then use those same credentials to move laterally into the ICS network.
 
-Malware: Attackers can use malware to infect a computer or device on the IT network and then use that infected device as a launching point to move laterally into the ICS network.
+- Malware: Attackers can use malware to infect a computer or device on the IT network and then use that infected device as a launching point to move laterally into the ICS network.
 
-Remote Access: Attackers can use remote access tools or backdoors to gain access to the IT network, and then use those tools to move laterally into the ICS network.
+- Remote Access: Attackers can use remote access tools or backdoors to gain access to the IT network, and then use those tools to move laterally into the ICS network.
 
-Weak Network Segmentation: If the IT and ICS networks are not properly segmented, an attacker who gains access to the IT network may be able to move laterally into the ICS network.
+- Weak Network Segmentation: If the IT and ICS networks are not properly segmented, an attacker who gains access to the IT network may be able to move laterally into the ICS network.
 
 To prevent lateral movement between IT and ICS networks, organizations should consider the following measures:
 
-Implement Strong Authentication: Implement strong authentication measures such as multi-factor authentication and privileged access management to reduce the risk of stolen credentials being used for lateral movement.
+- Implement Strong Authentication: Implement strong authentication measures such as multi-factor authentication and privileged access management to reduce the risk of stolen credentials being used for lateral movement.
 
-Regularly Monitor for Malware: Regularly monitor for malware on both the IT and ICS networks to detect and respond to infections before attackers can use them for lateral movement.
+- Regularly Monitor for Malware: Regularly monitor for malware on both the IT and ICS networks to detect and respond to infections before attackers can use them for lateral movement.
 
-Secure Remote Access: Implement secure remote access controls, such as VPNs and secure gateways, to prevent unauthorized access to the IT network.
+- Secure Remote Access: Implement secure remote access controls, such as VPNs and secure gateways, to prevent unauthorized access to the IT network.
 
-Proper Network Segmentation: Properly segment the IT and ICS networks to reduce the risk of lateral movement between the networks.
+- Proper Network Segmentation: Properly segment the IT and ICS networks to reduce the risk of lateral movement between the networks.
 
-Conduct Regular Security Assessments: Regularly conduct security assessments to identify weaknesses in the IT and ICS networks that could be exploited for lateral movement.
+- Conduct Regular Security Assessments: Regularly conduct security assessments to identify weaknesses in the IT and ICS networks that could be exploited for lateral movement.
 
 By implementing these measures, organizations can reduce the risk of lateral movement between IT and ICS networks and enhance the overall security posture of their industrial systems.
 
