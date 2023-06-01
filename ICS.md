@@ -109,6 +109,21 @@ By implementing these measures, organizations can reduce the risk of lateral mov
 | Intelligent Electronic Devices (IEDs) | Siemens, Schneider Electric, ABB, Eaton, Emerson Electric | Siprotec, Harmony, Safelinx, Easergy P3, D2000 |
 | Sensors | Honeywell, Siemens, Schneider Electric, Omron, Rockwell Automation | Solstice, Simatic, Modbus, ProCon, CompactLogix |
 
+## Common ICS Venders and Protocols
+
+| Vendor | Protocols |
+|---|---|
+| Allen-Bradley | DeviceNet, ControlNet, EtherNet/IP, Modbus, Profibus |
+| Siemens | Profibus, Profinet, Modbus, IEC 61131-3, OPC UA |
+| Schneider Electric | Modbus, Profibus, Profinet, OPC UA |
+| Omron | DeviceNet, EtherNet/IP, Modbus, FINS, OPC UA |
+| Rockwell Automation | DeviceNet, ControlNet, EtherNet/IP, Modbus, OPC UA |
+| Honeywell | DeviceNet, ControlNet, EtherNet/IP, Modbus, OPC UA |
+| Yokogawa | HART, FOUNDATION Fieldbus, Profibus, Modbus, OPC UA |
+| ABB | HART, FOUNDATION Fieldbus, Profibus, Modbus, OPC UA |
+| Emerson Process Management | HART, FOUNDATION Fieldbus, Profibus, Modbus, OPC UA |
+| B&R Industrial Automation | OPC UA, CODESYS, Modbus, EtherNet/IP |
+
 ## Common ICS Devices Attacks 
 
 | Device | Possible Exploits |
