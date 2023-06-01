@@ -99,6 +99,15 @@ By implementing these measures, organizations can reduce the risk of lateral mov
 | Sensor | HART, Foundation Fieldbus, Profibus, DeviceNet |
 | Actuator | Profibus, AS-Interface, Modbus TCP |
 
+## Common ICS Devices and Vendors/Models
+| Device | Top 10 Vendors | Top 10 Models |
+|---|---|---|
+| Programmable Logic Controllers (PLCs) | Allen-Bradley, Siemens, Schneider Electric, Omron, Rockwell Automation | ControlLogix, CompactLogix, SLC 500, MicroLogix, AutomationDirect Productivity Series |
+| Distributed Control Systems (DCSs) | Honeywell, Yokogawa, ABB, Emerson Process Management, Schneider Electric | Experion PKS, Foxboro DCS, System 800xA, DeltaV, Wonderware System Platform |
+| Human-Machine Interfaces (HMIs) | Wonderware, Inductive Automation, CODESYS, Ignition, Rockwell Automation | InTouch, Ignition, CODESYS Runtime Expert, Vijeo Designer, RSView |
+| Remote Terminal Units (RTUs) | Honeywell, Yokogawa, ABB, Emerson Process Management, Schneider Electric | TDC5000, Centum VP, System 900, DeltaV RTU, PACSystems RTU |
+| Intelligent Electronic Devices (IEDs) | Siemens, Schneider Electric, ABB, Eaton, Emerson Electric | Siprotec, Harmony, Safelinx, Easergy P3, D2000 |
+| Sensors | Honeywell, Siemens, Schneider Electric, Omron, Rockwell Automation | Solstice, Simatic, Modbus, ProCon, CompactLogix |
 
 ## Common ICS Devices Attacks 
 
